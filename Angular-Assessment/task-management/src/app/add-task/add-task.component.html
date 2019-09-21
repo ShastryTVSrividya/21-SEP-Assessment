@@ -1,0 +1,12 @@
+<div class="col-md-4 offset-md-4 mt-5 card card-body">
+<form [formGroup]='taskValue' (ngSubmit)='addTask(taskValue)'>
+<div class="form-group">
+    <div class="form-group">
+        <label for=""> Task </label>
+  <input type="text" class="form-control" placeholder="enter task" name='task'
+  id="task" formControlName='task'>
+</div>
+</div>
+<button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>

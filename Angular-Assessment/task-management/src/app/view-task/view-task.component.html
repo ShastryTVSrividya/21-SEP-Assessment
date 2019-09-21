@@ -1,0 +1,22 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th>Index</th>
+            <th>Tasks</th>
+            <th>edit</th>
+            <th>delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor='let task of tasks;index as i'>
+            <td>{{i+1}}</td>
+            <td>{{task}}</td>
+            <td>
+                <button class="btn btn-warning" (click)="updateTask(task)">Update</button>
+            </td>
+            <td>
+                    <button class="btn btn-danger" (click)="deleteTask(task)">Delete</button>
+                </td>
+        </tr>
+    </tbody>
+</table>
